@@ -198,7 +198,7 @@ def main():
     application.add_handler(CallbackQueryHandler(button_handler))
     
     logger.info("🤖 Бот запущен!")
-    application.run_polling(allowed_updates=update.Update.ALL_TYPES)
+    application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == '__main__':
     main()
